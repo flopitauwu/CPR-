@@ -36,6 +36,21 @@ const constitucion = [
                 numero: 6,
                 texto: "Los órganos del Estado deben someter su acción a la Constitución y a las normas dictadas conforme a ella, y garantizar el orden institucional de la República. Los preceptos de esta Constitución obligan tanto a los titulares o integrantes de dichos órganos como a toda persona, institución o grupo. La infracción de esta norma generará las responsabilidades y sanciones que determine la ley.",
                 conceptos: ["principio de legalidad", "supremacía constitucional", "Estado de derecho"]
+            },
+            {
+                numero: 7,
+                texto: "Los órganos del Estado actúan válidamente previa investidura regular de sus integrantes, dentro de su competencia y en la forma que prescriba la ley. Ninguna magistratura, ninguna persona ni grupo de personas pueden atribuirse, ni aun a pretexto de circunstancias extraordinarias, otra autoridad o derechos que los que expresamente se les hayan conferido en virtud de la Constitución o las leyes. Todo acto en contravención a este artículo es nulo y originará las responsabilidades y sanciones que la ley señale.",
+                conceptos: ["principio de juridicidad", "nulidad de derecho público", "competencia"]
+            },
+            {
+                numero: 8,
+                texto: "El ejercicio de las funciones públicas obliga a sus titulares a dar estricto cumplimiento al principio de probidad en todas sus actuaciones. Son públicos los actos y resoluciones de los órganos del Estado, así como sus fundamentos y los procedimientos que utilicen. El Presidente de la República, los Ministros de Estado, los diputados y senadores, y las demás autoridades y funcionarios que una ley orgánica constitucional señale, deberán declarar sus intereses y patrimonio en forma pública.",
+                conceptos: ["probidad", "transparencia", "publicidad de los actos estatales", "declaración de intereses"]
+            },
+            {
+                numero: 9,
+                texto: "El terrorismo, en cualquiera de sus formas, es por esencia contrario a los derechos humanos. Una ley de quórum calificado determinará las conductas terroristas y su penalidad.",
+                conceptos: ["terrorismo", "derechos humanos"]
             }
         ]
     },
