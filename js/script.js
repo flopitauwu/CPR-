@@ -20,3 +20,61 @@ function mostrarCapitulos() {
         contenedor.appendChild(tarjeta);
     });
 }
+
+// --- BUSCADOR ---
+
+const inputBuscador = document.querySelector("#inputBuscador");
+const contenedorResultados = document.querySelector("#resultadosBusqueda");
+const contenedorCapitulos = document.querySelector(".capitulos");
+
+inputBuscador.addEventListener("input", function () {
+    const consulta = inputBuscador.value.trim().toLowerCase();
+
+    if (consulta === "") {
+        // Si el buscador está vacío, mostramos los capítulos normales
+        contenedorResultados.innerHTML = "";
+        contenedorCapitulos.style.display = "grid";
+        return;
+    }
+
+    contenedorCapitulos.style.display = "none";
+
+    const resultados = [];
+
+    constitucion.forEach(function (capitulo) {
+        capitulo.articulos.forEach(function (articulo) {
+            const coincideNumero = String(articulo.numero) === consulta;
+            const coincideTexto = articulo.texto.toLowerCase().includes(consulta);
+            const coincideNumerales = (articulo.numerales || []).some(n => n.toLowerCase().includes(consulta));
+            const coincideConcepto = (articulo.conceptos || []).some(c => c.toLowerCase().includes(consulta));
+
+            if (coincideNumero || coincideTexto || coincideNumerales || coincideConcepto) {
+                resultados.push({ capitulo, articulo });
+            }
+        });
+    });
+
+    mostrarResultados(resultados, consulta);
+});
+
+function mostrarResultados(resultados, consulta) {
+    contenedorResultados.innerHTML = "";
+
+    if (resultados.length === 0) {
+        contenedorResultados.innerHTML = `<p class="sin-resultados">No se encontraron resultados para "${consulta}".</p>`;
+        return;
+    }
+
+    resultados.forEach(function ({ capitulo, articulo }) {
+        const item = document.createElement("div");
+        item.classList.add("resultado-item");
+
+        item.innerHTML = `
+            <h4>Artículo ${articulo.numero}</h4>
+            <p class="resultado-texto">${articulo.texto}</p>
+            <span class="resultado-capitulo">Capítulo ${capitulo.numero} · ${capitulo.titulo}</span>
+        `;
+
+        contenedorResultados.appendChild(item);
+    });
+}
