@@ -1,5 +1,5 @@
 // Estructura de datos: Capítulos -> Artículos -> Numerales
-// El texto de los artículos proviene del texto oficial de la Constitución (BCN).
+// El texto de los artículos proviene del texto oficial de la Constitución (BCN / Cámara de Diputados).
 
 const constitucion = [
     {
@@ -16,6 +16,7 @@ const constitucion = [
             }
         ]
     },
+    { numero: "II", titulo: "Nacionalidad y Ciudadanía", articulos: [] },
     {
         numero: "III",
         titulo: "De los Derechos y Deberes Constitucionales",
@@ -29,5 +30,17 @@ const constitucion = [
                 ]
             }
         ]
-    }
+    },
+    { numero: "IV", titulo: "Gobierno", articulos: [] },
+    { numero: "V", titulo: "Congreso Nacional", articulos: [] },
+    { numero: "VI", titulo: "Poder Judicial", articulos: [] },
+    { numero: "VII", titulo: "Ministerio Público", articulos: [] },
+    { numero: "VIII", titulo: "Tribunal Constitucional", articulos: [] },
+    { numero: "IX", titulo: "Justicia Electoral", articulos: [] },
+    { numero: "X", titulo: "Contraloría General de la República", articulos: [] },
+    { numero: "XI", titulo: "Fuerzas Armadas, de Orden y Seguridad Pública", articulos: [] },
+    { numero: "XII", titulo: "Consejo de Seguridad Nacional", articulos: [] },
+    { numero: "XIII", titulo: "Banco Central", articulos: [] },
+    { numero: "XIV", titulo: "Gobierno y Administración Interior del Estado", articulos: [] },
+    { numero: "XV", titulo: "Reforma de la Constitución y Procedimiento para Elaborar una Nueva Constitución", articulos: [] }
 ];
