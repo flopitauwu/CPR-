@@ -109,3 +109,42 @@ body {
     font-size: 0.9rem;
     color: var(--texto-oscuro);
 }
+
+/* --- RESULTADOS DE BÚSQUEDA --- */
+
+.resultados {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.resultado-item {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 14px var(--sombra);
+    border: 1px solid var(--rosa-empolvado);
+    text-align: left;
+}
+
+.resultado-item h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--borgoña);
+    margin: 0 0 8px;
+}
+
+.resultado-texto {
+    margin: 0 0 8px;
+    font-size: 0.95rem;
+}
+
+.resultado-capitulo {
+    font-size: 0.8rem;
+    color: #8a6a63;
+}
+
+.sin-resultados {
+    text-align: center;
+    color: #8a6a63;
+}
