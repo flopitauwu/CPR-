@@ -123,31 +123,6 @@ const constitucion = [
             texto: "Los cargos directivos superiores de las organizaciones gremiales son incompatibles con los cargos directivos superiores, nacionales y regionales, de los partidos políticos. La ley establecerá las sanciones que corresponda aplicar a los dirigentes gremiales que intervengan en actividades político partidistas y a los dirigentes de los partidos políticos que interfieran en el funcionamiento de las organizaciones gremiales y demás formas de agrupación ciudadana que la ley señale. Incurrirán, de pleno derecho, en la inelegibilidad para cargos públicos de elección popular por el tiempo que fije la ley, los dirigentes gremiales que hayan intervenido en actividades político partidistas.",
             conceptos: ["organizaciones gremiales", "incompatibilidad política", "partidos políticos", "dirigentes gremiales", "sanciones"]
         }
-     conceptos: [
-            "derechos fundamentales", "vida", "integridad física", "igualdad", "debido proceso", "tutela judicial",
-            "vida privada", "honra", "protección de datos", "inviolabilidad del hogar", "libertad de conciencia", "libertad de culto",
-            "libertad personal", "seguridad individual", "detención", "habeas corpus", "medio ambiente",
-            "salud", "educación", "libertad de enseñanza", "libertad de expresión", "libertad de prensa", "derecho a la información",
-            "derecho de reunión", "derecho de petición", "libertad de asociación", "partidos políticos",
-            "libertad de trabajo", "libre contratación", "negociación colectiva", "huelga", "empleos públicos",
-            "seguridad social", "colegiación", "tributos", "cargas públicas", "no discriminación tributaria",
-            "libertad económica", "Estado empresario", "orden público económico", "no discriminación económica",
-            "adquisición de bienes", "derecho de propiedad", "expropiación", "propiedad intelectual", "derecho de autor",
-            "propiedad industrial", "garantía de esencia de los derechos"
-        ]
-            }
-        ]
-    },
-    { numero: "IV", titulo: "Gobierno", articulos: [] },
-    { numero: "V", titulo: "Congreso Nacional", articulos: [] },
-    { numero: "VI", titulo: "Poder Judicial", articulos: [] },
-    { numero: "VII", titulo: "Ministerio Público", articulos: [] },
-    { numero: "VIII", titulo: "Tribunal Constitucional", articulos: [] },
-    { numero: "IX", titulo: "Justicia Electoral", articulos: [] },
-    { numero: "X", titulo: "Contraloría General de la República", articulos: [] },
-    { numero: "XI", titulo: "Fuerzas Armadas, de Orden y Seguridad Pública", articulos: [] },
-    { numero: "XII", titulo: "Consejo de Seguridad Nacional", articulos: [] },
-    { numero: "XIII", titulo: "Banco Central", articulos: [] },
-    { numero: "XIV", titulo: "Gobierno y Administración Interior del Estado", articulos: [] },
-    { numero: "XV", titulo: "Reforma de la Constitución y Procedimiento para Elaborar una Nueva Constitución", articulos: [] }
+    ]
+}
 ];
