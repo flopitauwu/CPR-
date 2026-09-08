@@ -69,9 +69,19 @@ function mostrarResultados(resultados, consulta) {
         const item = document.createElement("div");
         item.classList.add("resultado-item");
 
+        let htmlNumerales = "";
+        if (articulo.numerales && articulo.numerales.length > 0) {
+            htmlNumerales = '<ul class="resultado-numerales">';
+            articulo.numerales.forEach(function (numeral) {
+                htmlNumerales += `<li>${numeral}</li>`;
+            });
+            htmlNumerales += '</ul>';
+        }
+
         item.innerHTML = `
             <h4>Artículo ${articulo.numero}</h4>
             <p class="resultado-texto">${articulo.texto}</p>
+            ${htmlNumerales}
             <span class="resultado-capitulo">Capítulo ${capitulo.numero} · ${capitulo.titulo}</span>
         `;
 
